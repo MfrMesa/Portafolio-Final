@@ -25,7 +25,6 @@ export default function Contacto() {
 
 
     function handleFormSubmit(event){
-        event.preventDefault();
             
         emailjs
             .sendForm('service_r5da7gh', 'template_1vugzp6', form.current, {
