@@ -1,0 +1,265 @@
+@import url(font.css);
+@import url(root.css);
+
+
+.experienciaCV {
+    width: 100%;
+    min-height: 45rem;
+    background: linear-gradient(180deg, #e7cfcf 10%,  #FFFFFF 80%);
+}
+
+.tituloSeccion {
+    margin-left: 6rem;
+    color: var(--rosa);
+    font-size: 64px;
+    margin-bottom: 6rem;
+}
+
+.titulo1{
+    font-family: "Great Mango";
+    --color-1: var(--white);
+    --color-2: var(--rosa);
+    --color-3: var(--morado);
+    animation: color-animation 4s linear infinite;
+}
+
+
+.titulo2{
+    font-family: "Great Mango";
+    --color-1: var(--text);
+    --color-2: var(--plum);
+    --color-3: var(--rosa);
+    animation: color-animation 4s linear infinite;
+}
+
+
+.titulo3{
+    font-family: "Great Mango";
+    --color-1: var(--plum);
+    --color-2: var(--text);
+    --color-3: var(--white);
+    animation: color-animation 4s linear infinite;
+}
+
+
+.titulo4{
+    margin-left: 2rem;
+    font-family: "Great Mango";
+    --color-1: var(--rosa);
+    --color-2: var(--morado);
+    --color-3: var(--text);
+    animation: color-animation 4s linear infinite;
+}
+
+.titulo5{
+    font-family: "Great Mango";
+    --color-1: var(--morado);
+    --color-2: var(--white);
+    --color-3: var(--plum);
+    animation: color-animation 4s linear infinite;
+}
+
+
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+
+
+.resumenCV {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    flex-direction: column; 
+}
+
+.contenedorTituloTrabajo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    height: 80px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #6A1D2F 30%, #DC8C8A 97%) 1;
+    background-color: transparent;
+    z-index: 100;
+    transition: all 1.5s ease;
+}
+
+.contenedorTituloTrabajo:hover,
+.contenedorTituloTrabajo.clicked {
+    color: var(--white);
+    background-image: linear-gradient(to right, #DC8C8A 8%, #6A1D2F 58% , #F76D6D 99%);
+    transition: all 0.5s ease;
+}
+
+
+.tituloContenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 350px;
+}
+
+
+
+.tituloTrabajo {
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+    margin-left: 2rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.contenedorTituloTrabajo:hover .tituloTrabajo,
+.contenedorTituloTrabajo:hover .svg path,
+.contenedorTituloTrabajo:hover .fechaTrabajo{
+    color: var(--white);
+    transition: all 0.5s ease;
+}
+
+.fechaTrabajo {
+    margin-right: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+    font-size: 1.25rem;
+}
+
+.infoContainer {
+    display: flex;
+    align-items: normal;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 750px;
+    height: 200px;
+    border-radius: 0rem 0rem 0.625rem 0.625rem;
+    background: var(--white);
+    box-shadow: 0px 2px 8px 1px var(--morado);
+    transition: all 1.5s ease;
+}
+
+.locacionConatiner {
+    width: 100%;
+    height: 30px;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+
+.locacion{
+    color: var(--plum);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.svg path{
+    color: var(--plum);
+}
+
+#pin {
+    margin-right: 5px;
+}
+
+.descripcionTrabajo {
+    margin-left:2rem;
+    margin-right:2rem;
+    color: var(--plum);
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+
+.habilidadesContainer {
+    width: 100%;
+    height: 30px;
+}
+
+.habilidades {
+    font-weight: 600;
+    margin: 2rem;
+    font-size: 0.7rem;
+    color: var(--violeta);
+}
+
+.habilidades:hover{
+    color: var(--rosa);
+    transition: all 0.5s ease;
+}
+
+.verCv {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    text-decoration-line: underline;
+    text-decoration-color: var(--text); 
+}
+
+.verCv:hover{
+    text-decoration-color: var(--rosa); 
+    transition: all 0.5s ease;
+}
+
+#cvCompleto {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.verCv:hover #cvCompleto{
+    color: var(--rosa); 
+    transition: all ease 0.2s;
+}
+
+
+
+@media (max-width: 768px){
+
+    .experienciaCV{
+        height: fit-content;
+    }
+
+    .contenedorTituloTrabajo {
+        width: 40rem;
+    }
+
+    .infoContainer{
+        width: 40rem;
+    }
+}
+
+
+@media (max-width: 431px){
+
+    .experienciaCV{
+        height: fit-content;
+    }
+
+    .tituloSeccion{
+        font-size: 2rem;
+        margin-left: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .contenedorTituloTrabajo {
+        width: 23rem;
+    }
+    
+    .infoContainer{
+        width: 23rem;
+        height: 25rem;
+    }
+
+    .habilidades{
+        margin: 0.5rem;
+    }
+}

@@ -1,0 +1,658 @@
+@import url(font.css);
+@import url(root.css);
+
+
+
+.collageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(180deg, #FFFFFF 30%, #e7cfcf 100%);
+}
+
+
+.collage {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    column-gap: 1rem;
+    grid-template-columns: repeat(10, 90px);
+    grid-template-rows: repeat(4, 90px);
+    width: 100%;
+    height: 35rem;
+    margin-top: 4rem;
+}
+
+
+.foto1 {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn1; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto2 {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn4; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto3 {
+    grid-column:3;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn3; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto4 {
+    grid-column:4;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn2; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto5 {
+    grid-column: 5/7;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn1; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+
+.foto7 {
+    grid-column:7;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn3; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto8 {
+    grid-column: 8;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn4; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto9 {
+    grid-column: 9;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn1; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto10 {
+    grid-column:  10;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn2; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto11 {
+    grid-column:  1;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn4; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto12 {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn1; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto13 {
+    grid-column: 3;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn3; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto14 {
+    grid-column: 4;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn4; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto15 {
+    grid-column: 5;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn1; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto16 {
+    grid-column: 6;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn2; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto17 {
+    grid-column: 7;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn3; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto18 {
+    grid-column: 8;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn1; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto19 {
+    grid-column: 9;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn4; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto20 {
+    grid-column: 10;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn2; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto21 {
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn4; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+
+.foto23 {
+    grid-column: 2/4;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn1; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+
+.foto24 {
+    grid-column: 4;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn3; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto25 {
+    grid-column: 5;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn4; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto26 {
+    grid-column: 6;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn1; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto27 {
+    grid-column: 7;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn2; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto28 {
+    grid-column: 8;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn3; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto29 {
+    grid-column: 9;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn4; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto30 {
+    grid-column: 10;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn1; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto31 {
+    grid-column: 1;
+    grid-row: 4;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn2; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto32 {
+    grid-column: 2;
+    grid-row: 4;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;    
+    animation-duration: 1s; 
+    animation-name: fadeIn3; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto33 {
+    grid-column: 3;
+    grid-row: 4;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn4; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto34 {
+    grid-column: 4;
+    grid-row: 4;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn3; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto35 {
+    grid-column: 5;
+    grid-row: 4;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn2; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto36 {
+    grid-column: 6;
+    grid-row: 4;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn4; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto37 {
+    grid-column: 7;
+    grid-row: 4;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn4; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+}
+
+.foto38 {
+    grid-column: 8;
+    grid-row: 4;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn2; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+.foto39 {
+    grid-column: 9/11;
+    grid-row: 4;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--white);
+    border-bottom: 15px var(--white) solid;
+    box-shadow: 0px 8px 8px  #8c8989;
+    animation-duration: 1s; 
+    animation-name: fadeIn1; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out; 
+}
+
+
+.nombre{
+    font-size: 84px;
+    font-weight: 500;
+    color: var(--plum);
+    position: absolute;
+    font-family: "Great Mango";
+    animation-duration: 3s; 
+    animation-name: fadeIn5; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+    z-index: 3;
+    margin-top: -3rem;
+}
+
+
+.ahora {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--plum);
+    position: absolute;
+    font-family: "Great Mango";
+    animation-duration: 3s; 
+    animation-name: fadeIn5; 
+    animation-range-start: cover;
+    animation-timing-function: ease-in-out;
+    z-index: 3;
+    margin-top: 13rem;
+}
+
+
+
+@keyframes fadeIn1 {
+    from {
+        opacity: 0; 
+        transform: translateX(-100%); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+
+@keyframes fadeIn2 {
+    from {
+        opacity: 0; 
+        transform: translateX(-50%); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+    
+}
+
+
+@keyframes fadeIn3 {
+    from {
+        opacity: 0; 
+        transform: translateX(100%); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+
+@keyframes fadeIn4 {
+    from {
+        opacity: 0; 
+        transform: translateX(50%); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+
+@keyframes fadeIn5 {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+@media (max-width: 768px){
+
+    .collage{
+        opacity: 0.5;
+    }
+
+    .nombre{
+        font-size: 3rem;
+        text-align: left;
+        width: 50%;
+    }
+}

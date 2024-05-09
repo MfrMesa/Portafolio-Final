@@ -1,0 +1,205 @@
+@import url(font.css);
+
+
+.contactoInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 40rem;
+    padding: 2rem;
+    background: linear-gradient(180deg, #FFF 30.95%, #e7cfcf 100%);
+}
+
+
+.contactoTitulo {
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 6.4px;
+    color: var(--rosa);
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-family: "Great Mango";
+}
+
+.exclamacion {
+    --color-1: var(--morado);
+    --color-2: var(--naranja);
+    --color-3: var(--amarillo);
+    animation: color-animation 4s linear infinite;
+}
+
+.exclamacion2 {
+    --color-1: var(--amarillo);
+    --color-2: var(--morado);
+    --color-3: var(--naranja);
+    animation: color-animation 4s linear infinite;
+}
+
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+
+.textoContacto {
+    font-size: 25px;
+    font-weight: 700; 
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.linksContactoContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 60%;
+}
+
+.linksContainer{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 2rem;
+}
+
+.linksContacto{
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--plum);
+}
+
+.linksContacto:hover{
+    color: var(--rosa);
+    transition: all ease 0.2s;
+}
+
+
+.svg{
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+}
+
+
+.copiable{
+    user-select: all;
+}
+
+.mensaje{
+    width: 450px;
+    height: 250px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #DC8C8A 8%, #6A1D2F 58% , #F76D6D 99%) 1;
+}
+
+textarea{
+    width: 100%;
+    height: 100%;
+    border: none
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.boton{
+    border-radius: 0.3125rem;
+    width: 100%;
+    height: 3rem;
+    background: var(--white);
+    color: var(--plum);
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #DC8C8A 8%, #6A1D2F 58% , #F76D6D 99%) 1;
+    transition: all 1s ease; 
+}
+
+.boton:hover{
+    color: var(--white);
+    background-image: linear-gradient(to right, #DC8C8A 8%, #6A1D2F 58% , #F76D6D 99%);
+}
+
+
+@media (max-width: 768px){
+
+    .contactoInfo{
+        padding-top: 0;
+        height: 40rem;
+    }
+
+    .contactoTitulo{
+        font-size: 2rem;
+    }
+
+    .linksContactoContainer{
+        width: fit-content;
+    }
+}
+
+
+@media (max-width: 431px){
+
+    .contactoInfo{
+        padding: 1rem;
+    }
+    
+    .contactoTitulo{
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .textoContacto{
+        font-size: 1.5rem;
+    }
+
+    .linksContactoContainer{
+        flex-direction: column;
+    }
+
+    .mensaje{
+        width: 250px;
+        height: 150px;
+    }
+
+    .linksContacto{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,178 @@
+@import url(font.css);
+@import url(root.css);
+
+
+.aboutInfo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 8rem;
+    height: 45rem;
+    background: linear-gradient(180deg, #e7cfcf 30%,  #FFFFFF 80%);
+}
+
+.aboutMeContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.aboutMe {
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 6.4px;
+}
+
+
+.aboutMe1 {
+    font-family: "Great Mango";
+    margin: 0.2rem;
+    --color-1: var(--plum);
+    --color-2: var(--white);
+    --color-3: var(--text);
+    animation: color-animation 4s linear infinite;
+}
+
+.aboutMe2 {
+    font-family: "Great Mango";
+    margin: 0.2rem;
+    --color-1: var(--text);
+    --color-2: var(--morado);
+    --color-3: var(--plum);
+    animation: color-animation 4s linear infinite;
+}
+
+.aboutMe3 {
+    font-family: "Great Mango";
+    margin: 0.2rem;
+    --color-1: var(--white);
+    --color-2: var(--text);
+    --color-3: var(--morado);
+    animation: color-animation 4s linear infinite;
+}
+
+.aboutMe4 {
+    font-family: "Great Mango";
+    margin: 0.2rem;
+    --color-1: var(--morado);
+    --color-2: var(--plum);
+    --color-3: var(--white);
+    animation: color-animation 4s linear infinite;
+}
+
+
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+
+
+
+.shortInfo {
+    margin-top: 4rem;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    font-weight: 500; 
+    text-align: center;
+}
+
+#venezuela {
+    color: transparent;
+    background-image: url(/src/img/vene\ bandera.jpg);
+    background-size: contain;
+    background-position-y: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info {
+    margin-top: 2rem;
+    text-align: justify;
+    font-family: "Montserrat Alternates", sans-serif;
+    width: 35rem;
+    height: 35rem;
+}
+
+
+.imagenes{
+    align-self: flex-start;
+    margin-right: 8rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+    align-items: center;
+    gap: 3rem;
+}
+
+.yo{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 30.25rem;
+    background:lightgray 50% / cover no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(28, 11, 24, 0.25));
+
+}
+
+.tecnologias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.logos{
+    width: 30px;
+    height: 30px;
+}
+
+
+@media (max-width: 768px){
+
+    .aboutInfo{
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .info{
+        height: fit-content;
+    }
+
+    .imagenes{
+        align-self: center;
+    }
+}
+
+
+@media (max-width: 431px){
+
+    .info{
+        font-size: 0.8rem;
+        width: fit-content;
+    }
+
+    .aboutMe {
+        font-size: 44px;
+        letter-spacing: 3px;
+    }
+
+    .imagenes{
+        width: 60%;
+    }
+}
