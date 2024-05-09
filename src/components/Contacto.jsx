@@ -51,11 +51,11 @@ export default function Contacto() {
             <div  className={classes.contactoContainer}>
                 <h3 className={classes.contactoTitulo}>
                     <span className={classes.exclamacion}>¡</span>
-                    mantengamonos en contacto
+                    construyamos un futuro profesional juntos
                     <span className={classes.exclamacion2}>!</span>
                 </h3>
                 <p className={classes.textoContacto}>
-                construyamos un futuro profesional juntos
+                mantengamonos en contacto
                 </p>
             </div>
             <div className={classes.linksContactoContainer}>
