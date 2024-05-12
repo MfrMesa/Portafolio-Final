@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import React, { useContext } from 'react';
 import Headroom from 'react-headroom';
 import classes from "/src/style/Navbar.module.css";
 import { HashLink as Anchor} from 'react-router-hash-link';
