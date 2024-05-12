@@ -5,6 +5,7 @@ import villa from "/src/img/VillaSol.mp4"
 import nintendo from "/src/img/Nintendo.mp4"
 import falcon from "/src/img/Falcon.mp4"
 import pasteleria from "/src/img/pasteleria.mp4"
+import { FormattedMessage } from 'react-intl';
 
 
 export default function Proyectos() {
@@ -25,27 +26,36 @@ export default function Proyectos() {
     return (
         <section id="proyectos" className={classes.galeriaProyectos}>
             <h2 className={classes.titlegaleria}>
-                <span className={classes.galeriaTitulo1}>pro</span>
-                <span className={classes.galeriaTitulo2}>yec</span>
-                <span className={classes.galeriaTitulo3}>tos</span>
+                <span className={classes.galeriaTitulo1}>
+                    <FormattedMessage id="pro"/>
+                </span>
+                <span className={classes.galeriaTitulo2}>
+                    <FormattedMessage id="yec"/>
+                </span>
+                <span className={classes.galeriaTitulo3}>
+                    <FormattedMessage id="tos"/>
+                </span>
             </h2>
             <div className={classes.cardsContainerTop}>
                 <div id={classes.proyecto1}> 
                     <video id={classes.card1} controls>
                         <source src={villa} type="video/mp4" />
                     </video>
-                    <button className={classes.boton} onClick={() => handleVisible(0)}>saber más</button>
+                    <button className={classes.boton} onClick={() => handleVisible(0)}>
+                        <FormattedMessage id="saber_mas"/>
+                    </button>
                 {mascaras[0] && (
                 <article className={`${classes.mascara1} show`}>
                     <h3 className={classes.tituloProyecto}>VillaSol Hotel</h3>
-                    <h3 className={classes.tituloSecundario}>llevado a cabo en equipo</h3>
+                    <h3 className={classes.tituloSecundario}>
+                        <FormattedMessage id="sub_proyecto"/>
+                    </h3>
                     <p className={classes.descripcion}>
-                    Página web creada desde cero. <br/> Diseñé el Home en Figma y luego traduje esos diseños a componentes funcionales utilizando React con Vite, complementada con estilos CSS y Sass responsivos 
-                    asegurándome de que cada elemento fuera coherente con nuestra visión. Me responsabilicé de desarrollar y diseñar los componentes del footer, banner, navbar, 
-                    card del Home, así como la página 404 y la página de restaurantes con sus respectivos componentes. También darle los últimos toques de diseño. Nos mantuvimos organizados utilizando 
-                    herramientas como Miró, Figma, Trello y Github, lo que nos permitió colaborar de manera eficiente y cumplir con nuestro plazo de entrega de un mes.
+                        <FormattedMessage id="descripcion_proyecto1"/>
                     </p>
-                    <Link id={classes.proyectoLink} to="https://github.com/MfrMesa/VillaSol-Hotel">ver proyecto</Link>
+                    <Link id={classes.proyectoLink} to="https://github.com/MfrMesa/VillaSol-Hotel">
+                        <FormattedMessage id="ver_proyecto"/>
+                    </Link>
                 </article>
                 )}
                 </div> 
@@ -55,16 +65,21 @@ export default function Proyectos() {
                     <video id={classes.card2} controls>
                         <source src={nintendo} type="video/mp4" />
                     </video>
-                    <button className={classes.botonmiddle} onClick={() => handleVisible(1)}>saber más</button>
+                    <button className={classes.botonmiddle} onClick={() => handleVisible(1)}>
+                        <FormattedMessage id="saber_mas"/>
+                    </button>
                 {mascaras[1] && (
                 <article className={`${classes.mascara2} show`}>
                         <h3 className={classes.tituloProyecto}>Nintendo Clone (Landing Page)</h3>
-                        <h3 className={classes.tituloSecundario}>llevado a cabo en equipo</h3>
+                        <h3 className={classes.tituloSecundario}>
+                            <FormattedMessage id="sub_proyecto"/>
+                        </h3>
                         <p className={classes.descripcion}>
-                        Fui la responsable de la creación del navbar, utilizando HTML y CSS con diseño adaptable (responsive). Elegí por incluir JavaScript para agregar funcionalidades interactivas como dropdowns y animaciones. 
-                        Para mantenernos organizados, optamos por Trello y Github, que facilitaron la colaboración y el seguimiento del progreso del proyecto. Tuvimos un mes y medio como plazo de entrega.
+                            <FormattedMessage id="descripcion_proyecto2"/>
                         </p>
-                        <Link id={classes.proyectoLink} to="https://github.com/MfrMesa/Nintendo-Clone">ver proyecto</Link>
+                        <Link id={classes.proyectoLink} to="https://github.com/MfrMesa/Nintendo-Clone">
+                            <FormattedMessage id="ver_proyecto"/>
+                        </Link>
                 </article>
                 )}
                 </div>
@@ -72,17 +87,21 @@ export default function Proyectos() {
                     <video id={classes.card3} controls>
                         <source src={falcon} type="video/mp4"/>
                     </video>
-                    <button className={classes.botonmiddle} onClick={() => handleVisible(2)}>saber más</button>
+                    <button className={classes.botonmiddle} onClick={() => handleVisible(2)}>
+                        <FormattedMessage id="saber_mas"/>
+                    </button>
                 {mascaras[2] && (
                 <article className={`${classes.mascara3} show`}>
                         <h3 className={classes.tituloProyecto}>Falcon Dashboard Clone (Landing Page)</h3>
-                        <h3 className={classes.tituloSecundario}>llevado a cabo en equipo</h3>
+                        <h3 className={classes.tituloSecundario}>
+                            <FormattedMessage id="sub_proyecto"/>
+                        </h3>
                         <p className={classes.descripcion}>
-                        Dirigí y lideré este proyecto <br/> donde mi responsabilidad fue la creación del sidebar, el carrito de compras y la estructura de las tarjetas centrales. 
-                        Para lograrlo, utilizamos HTML, CSS con diseño adaptable (responsive) y JavaScript. Nuestra gestión se llevó a cabo eficientemente gracias a Trello y Github.
-                        Todo esto en un plazo de entrega de un mes.
+                            <FormattedMessage id="descripcion_proyecto3"/>
                         </p>
-                        <Link id={classes.proyectoLink} to="https://github.com/MfrMesa/Falcon-Dashboard-Clone">ver proyecto</Link>
+                        <Link id={classes.proyectoLink} to="https://github.com/MfrMesa/Falcon-Dashboard-Clone">
+                            <FormattedMessage id="ver_proyecto"/>
+                        </Link>
                 </article>
                 )}
                 </div>
@@ -92,18 +111,23 @@ export default function Proyectos() {
                     <video id={classes.card4} controls>
                         <source src={pasteleria} type="video/mp4"/>
                     </video>
-                    <button className={classes.boton} onClick={() => handleVisible(3)}>saber más</button>
+                    <button className={classes.boton} onClick={() => handleVisible(3)}>
+                        <FormattedMessage id="saber_mas"/>
+                    </button>
                 {mascaras[3] && (
                 <article className={`${classes.mascara4} show `}>
-                        <h3 className={classes.tituloProyecto}>Peonías & Jazmines Pastelería Personalizada (e-Commerce)</h3>
-                        <h3 className={classes.tituloSecundario}>proyecto personal</h3>
+                        <h3 className={classes.tituloProyecto}>
+                            <FormattedMessage id="peonias"/>
+                        </h3>
+                        <h3 className={classes.tituloSecundario}>
+                            <FormattedMessage id="personalp"/>
+                        </h3>
                         <p className={classes.descripcion}>
-                        Desde la concepción hasta la implementación, llevé el proyecto a la vida utilizando Figma para el diseño, que luego transformé 
-                        en una aplicación React con Vite, complementada con estilos CSS responsivos. Además de la funcionalidad básica, integré 
-                        bibliotecas como Email.js para formularios y Slick para un slider suave, mientras que Stripe gestionaba la pasarela de pago. 
-                        Para la gestión de datos, simulé una base de datos con mocks de arrays,.  
+                            <FormattedMessage id="descripcion_proyecto4"/>
                         </p>
-                        <Link id={classes.proyectoLink} to="https://github.com/MfrMesa/Peonias-Jazmines-Pasteleria">ver proyecto</Link>
+                        <Link id={classes.proyectoLink} to="https://github.com/MfrMesa/Peonias-Jazmines-Pasteleria">
+                            <FormattedMessage id="ver_proyecto"/>
+                        </Link>
                 </article>
                 )}
                 </div>

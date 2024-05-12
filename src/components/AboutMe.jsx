@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import classes from "/src/style/AboutMe.module.css"
 import css from "/src/img/css.png"
 import html from "/src/img/html.png"
@@ -11,6 +11,7 @@ import ts from "/src/img/ts.png"
 import node from "/src/img/node.png"
 import express from "/src/img/express.png"
 import mifoto from "/src/img/yo.jpeg"
+import { FormattedMessage } from 'react-intl';
 
 
 export default function AboutMe() {
@@ -20,17 +21,24 @@ export default function AboutMe() {
         <section id="aboutme" className={classes.aboutInfo}>
             <div className={classes.aboutMeContainer}>
                 <h1 className={classes.aboutMe}>
-                    <span className={classes.aboutMe1}>un</span>
-                    <span className={classes.aboutMe2}>poco</span>
-                    <span className={classes.aboutMe3}>de</span>
-                    <span className={classes.aboutMe4}>mi,</span>
+                    <span className={classes.aboutMe1}>
+                        <FormattedMessage id="un"/>
+                    </span>
+                    <span className={classes.aboutMe2}>
+                        <FormattedMessage id="poco"/>
+                    </span>
+                    <span className={classes.aboutMe3}>
+                        <FormattedMessage id="de"/>
+                    </span>
+                    <span className={classes.aboutMe4}>
+                        <FormattedMessage id="mi"/>
+                    </span>
                 </h1>
-                <h2 className={classes.shortInfo}>Cambié mi batidor por una computadora</h2>
+                <h2 className={classes.shortInfo}>
+                    <FormattedMessage id="me_titulo"/>
+                </h2>
                 <p className={classes.info}>
-                Después de dejar mi carrera en el campo de la pastelería, decidí aventurarme en el mundo de la tecnologia como desarrollor Full Stack y el diseño UX/UI.
-                Ahora, me sumerjo en la creación de experiencias digitales, fusionando la creatividad con mis habilidades técnicas. 
-                Este cambio ha sido un viaje emocionante y desafiante, estoy a la expectativa de explorar las infinitas posibilidades que ofrece este 
-                campo en constante evolución.
+                    <FormattedMessage id="me_info"/>
                 </p>
             </div>
             <div className={classes.imagenes}>
