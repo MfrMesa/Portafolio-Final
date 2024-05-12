@@ -110,7 +110,7 @@ export default function Banner() {
                 <img src={lacasa} className={verCuarto ? classes.foto7 : classes.hidden}/>
                 <img src={desayuno} className={verSegundo ? classes.foto8 : classes.hidden}/>
                 <img src={zanahoria} className={verTercero ? classes.foto9 : classes.hidden}/>
-                <img src={manos}className={verPrimero ?  classes.foto10 : classes.hidden}/>
+                <img src={manos} className={verPrimero ?  classes.foto10 : classes.hidden}/>
                 <img src={membrillo} className={verCuarto ? classes.foto13 : classes.hidden}/>
                 <img src={casa} className={verSegundo ? classes.foto12 : classes.hidden}/>
                 <img src={chabel} className={verPrimero ? classes.foto11 : classes.hidden}/>
