@@ -53,7 +53,54 @@
 }
 
 
+.langButton{
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #6A1D2F 30%, #DC8C8A 97%) 1;
+    padding: 0.4rem;
+    margin: 0.2rem;
+    background-color: var(--white);
+    color: var(--text);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.langButton:hover{
+    color: var(--white);
+    background-image: linear-gradient(to right, #DC8C8A 8%, #6A1D2F 58% , #F76D6D 99%);
+    transition: all 0.5s ease;
+}
+
+
+@media (max-width: 768px){
+
+    
+    .navigationContainerCV{
+        height: 60px;
+    }
+
+    .itemsCV{
+        font-size: 0.5rem;
+    }
+
+    
+    .langButton{
+    font-size: 0.5rem;
+    }
+
+
+    .divider {
+        height: 20px;
+    }
+
+}
+
+
 @media (max-width: 431px){
 
-   
+    .navigationCV,
+    .itemsCV,
+    .divider{
+        display: none;
+    }
 }

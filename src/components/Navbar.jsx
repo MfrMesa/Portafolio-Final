@@ -39,9 +39,8 @@ export default function Navbar() {
                         </Anchor>
                     </li>
                 </ul>
-                <button value="en" onClick={context.selectLang}>ES</button>
-                <button value="en-US" onClick={context.selectLang}>EN</button>
-
+                <button value="en" onClick={context.selectLang} className={classes.langButton}>ES</button>
+                <button value="en-US" onClick={context.selectLang} className={classes.langButton}>EN</button>
             </nav>
         </Headroom>
     );

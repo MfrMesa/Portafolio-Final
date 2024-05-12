@@ -647,12 +647,41 @@
 @media (max-width: 768px){
 
     .collage{
-        opacity: 0.5;
-    }
+        grid-template-columns: repeat(4, 90px);
+        grid-template-rows: repeat(4, 90px);
+    } 
 
     .nombre{
-        font-size: 3rem;
-        text-align: left;
-        width: 50%;
+        font-size: 2rem;
+        width: 80%;
+        text-align: center;
     }
+
+    .ahora{
+        font-size: 1.5rem;
+    }
+
+    .foto5, .foto6, .foto7, .foto8, .foto9, .foto10, .foto15, .foto16, .foto17,
+    .foto18, .foto19, .foto20, .foto25, .foto26, .foto27, .foto28, .foto29, .foto30,
+    .foto35, .foto36, .foto37, .foto38, .foto39{
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width: 431px){
+
+    .nombre{
+        font-size: 1.85rem;
+        width: 100%;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .ahora{
+        font-size: 1.35rem;
+    }
+
 }
