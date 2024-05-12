@@ -25,8 +25,8 @@ export default function Experiencia() {
     }
 
     const cvLinks = {
-        es: "/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer.pdf",
-        en: "/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer (en).pdf",
+        "en": "/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer.pdf",
+        "en-US": "/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer (en).pdf",
     };
 
     return (
