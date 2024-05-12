@@ -35,11 +35,11 @@ export default function Wrapper(props) {
 
     
 
-  return (
+return (
     <Context.Provider value={{locale, selectLang}}>
         <IntlProvider messages={messages} local={locale}>
             {props.children}
         </IntlProvider>
     </Context.Provider>
-  )
+)
 }
