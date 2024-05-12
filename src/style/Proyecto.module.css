@@ -4,7 +4,7 @@
 
 .galeriaProyectos {
     width: 100%;
-    height: 110rem;
+    height: 120rem;
     background: linear-gradient(180deg, #FFF 20.95%, #e7cfcf 100%);
 }
 
@@ -203,8 +203,29 @@
     justify-content: center;
     width: 100%;
     height: 25rem;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
+
+
+.animation{
+    animation-duration: 2s; 
+    animation-name: fadeIn; 
+    animation-range-start: cover;
+    animation-range-end: 50%;
+    animation-timing-function: ease-out; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 
 
 

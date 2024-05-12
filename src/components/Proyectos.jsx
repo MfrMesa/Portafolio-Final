@@ -6,12 +6,17 @@ import nintendo from "/src/img/Nintendo.mp4"
 import falcon from "/src/img/Falcon.mp4"
 import pasteleria from "/src/img/pasteleria.mp4"
 import { FormattedMessage } from 'react-intl';
+import { useInView } from 'react-intersection-observer'
 
 
 export default function Proyectos() {
+    
 
     const [clicked, setClicked] = useState(null); 
     const [mascaras, setMascaras] = useState([false, false, false, false]);
+    const { ref: first, inView: visibleFirst} = useInView()
+    const { ref: second, inView: visibleSecond} = useInView()
+    const { ref: third, inView: visibleThird} = useInView()
 
     function handleVisible(index) {
         setClicked(null)
@@ -36,7 +41,7 @@ export default function Proyectos() {
                     <FormattedMessage id="tos"/>
                 </span>
             </h2>
-            <div className={classes.cardsContainerTop}>
+            <div ref={first} className={`${classes.cardsContainerTop} ${visibleFirst ? classes.animation : ""}` }>
                 <div id={classes.proyecto1}> 
                     <video id={classes.card1} controls>
                         <source src={villa} type="video/mp4" />
@@ -60,7 +65,7 @@ export default function Proyectos() {
                 )}
                 </div> 
             </div>
-            <div className={classes.cardsContainerMiddle}>
+            <div ref={second} className={`${classes.cardsContainerMiddle} ${visibleSecond ? classes.animation : ""}` }>
                 <div id={classes.proyecto2}>
                     <video id={classes.card2} controls>
                         <source src={nintendo} type="video/mp4" />
@@ -106,7 +111,7 @@ export default function Proyectos() {
                 )}
                 </div>
             </div>
-            <div className={classes.cardsContainerBottom}>
+            <div ref={third} className={`${classes.cardsContainerBottom} ${visibleThird ? classes.animation : ""}` }>
                 <div id={classes.proyecto4}>
                     <video id={classes.card4} controls>
                         <source src={pasteleria} type="video/mp4"/>

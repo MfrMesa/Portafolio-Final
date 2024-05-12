@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import classes from "/src/style/ExperienciaLaboral.module.css"
 import { Link } from 'react-router-dom'
 import pin from "/src/svg/pin.svg"
 import { FormattedMessage } from 'react-intl';
+import {Context} from "/src/components/Wrapper"
 
 
 export default function Experiencia() {
 
+    const context = useContext(Context);
     const [clicked, setClicked] = useState(null); 
     const [visible, setVisible] = useState([false, false, false]); 
 
@@ -22,7 +24,10 @@ export default function Experiencia() {
         }
     }
 
-
+    const cvLinks = {
+        es: "/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer.pdf",
+        en: "/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer (en).pdf",
+    };
 
     return (
         <section id="experiencia" className={classes.experienciaCV}>
@@ -151,7 +156,7 @@ export default function Experiencia() {
             )}
         </article>
         <div className={classes.verCv}>
-            <Link id={classes.cvCompleto} to="/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer.pdf"  target="_blank">
+            <Link value="en" id={classes.cvCompleto} to={cvLinks[context.locale]}  target="_blank">
                 <FormattedMessage id="cv"/>
             </Link>
         </div>

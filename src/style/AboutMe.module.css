@@ -138,6 +138,44 @@
     height: 30px;
 }
 
+.animation{
+    animation-duration: 2s; 
+    animation-name: fadeIn; 
+    animation-range-start: cover;
+    animation-range-end: 50%;
+    animation-timing-function: ease-out; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+        transform: translateX(-100%); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+.animationRight{
+    animation-duration: 2s; 
+    animation-name: fadeInRight; 
+    animation-range-start: cover;
+    animation-range-end: 50%;
+    animation-timing-function: ease-out; 
+}
+
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0; 
+        transform: translateX(100%); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
 
 @media (max-width: 768px){
 

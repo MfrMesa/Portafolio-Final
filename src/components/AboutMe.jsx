@@ -12,14 +12,18 @@ import node from "/src/img/node.png"
 import express from "/src/img/express.png"
 import mifoto from "/src/img/yo.jpeg"
 import { FormattedMessage } from 'react-intl';
+import { useInView } from 'react-intersection-observer'
+
 
 
 export default function AboutMe() {
 
+    const { ref: side, inView: visibleSide} = useInView()
+    const { ref: right, inView: visibleRight} = useInView()
 
     return (
         <section id="aboutme" className={classes.aboutInfo}>
-            <div className={classes.aboutMeContainer}>
+            <div ref={side} className={`${classes.aboutMeContainer} ${visibleSide ? classes.animation : ""}` }>
                 <h1 className={classes.aboutMe}>
                     <span className={classes.aboutMe1}>
                         <FormattedMessage id="un"/>
@@ -41,7 +45,7 @@ export default function AboutMe() {
                     <FormattedMessage id="me_info"/>
                 </p>
             </div>
-            <div className={classes.imagenes}>
+            <div ref={right} className={`${classes.imagenes} ${visibleRight ? classes.animationRight : ""}` }>
                 <img className={classes.yo} src={mifoto} alt="Una foto mia muy profesional"/>
                 <div className={classes.tecnologias}>
                     <img src={css} alt="logo tecnologia aprendida" className={classes.logos}/>
