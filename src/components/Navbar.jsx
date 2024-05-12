@@ -8,9 +8,10 @@ import {Context} from "/src/components/Wrapper"
 import { FormattedMessage } from 'react-intl';
 
 
+export default function Navbar() {
+
     const context = useContext(Context);
 
-export default function Navbar() {
     return (
         <Headroom>
             <nav className={classes.navigationContainerCV}>
@@ -46,4 +47,4 @@ export default function Navbar() {
         </Headroom>
     );
 }
-}
+
