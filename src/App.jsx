@@ -6,6 +6,7 @@ import Proyectos from './components/Proyectos'
 import ExperienciaLaboral from './components/ExperienciaLaboral'
 import Contacto from './components/Contacto'
 
+
 export default function App() {
 
 
