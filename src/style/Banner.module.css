@@ -674,14 +674,14 @@
 @media (max-width: 431px){
 
     .nombre{
-        font-size: 1.85rem;
+        font-size: 1.7rem;
         width: 100%;
         text-align: center;
         margin-top: -25px;
     }
 
     .ahora{
-        font-size: 1.35rem;
+        font-size: 1.2rem;
     }
 
 }
