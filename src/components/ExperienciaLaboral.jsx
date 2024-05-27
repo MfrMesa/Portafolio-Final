@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 import pin from "/src/svg/pin.svg"
 import { FormattedMessage } from 'react-intl';
 import {Context} from "/src/components/Wrapper"
-import cvEspañol from "/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer.pdf"
 import cvIngles from "/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer (en).pdf"
+import cvEspañol from "/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer.pdf"
 
 
 export default function Experiencia() {
@@ -26,10 +26,6 @@ export default function Experiencia() {
         }
     }
 
-    const cvLinks = {
-        "en": {cvEspañol},
-        "en-US": {cvIngles},
-    };
 
     return (
         <section id="experiencia" className={classes.experienciaCV}>
@@ -158,7 +154,7 @@ export default function Experiencia() {
             )}
         </article>
         <div className={classes.verCv}>
-            <Link value="en" id={classes.cvCompleto} to={cvLinks[context.locale]}  target="_blank">
+            <Link id={classes.cvCompleto} to={cvEspañol}  target="_blank">
                 <FormattedMessage id="cv"/>
             </Link>
         </div>
