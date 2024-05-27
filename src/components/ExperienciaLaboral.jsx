@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import pin from "/src/svg/pin.svg"
 import { FormattedMessage } from 'react-intl';
 import {Context} from "/src/components/Wrapper"
+import cvEspañol from "/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer.pdf"
+import cvIngles from "/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer (en).pdf"
 
 
 export default function Experiencia() {
@@ -25,8 +27,8 @@ export default function Experiencia() {
     }
 
     const cvLinks = {
-        "en": "/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer.pdf",
-        "en-US": "/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer (en).pdf",
+        "en": {cvEspañol},
+        "en-US": {cvIngles},
     };
 
     return (
