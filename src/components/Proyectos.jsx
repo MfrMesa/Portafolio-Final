@@ -5,6 +5,7 @@ import villa from "/src/img/VillaSol.mp4"
 import nintendo from "/src/img/Nintendo.mp4"
 import falcon from "/src/img/Falcon.mp4"
 import pasteleria from "/src/img/pasteleria.mp4"
+import clinica from "/src/img/clinica.mp4"
 import { FormattedMessage } from 'react-intl';
 import { useInView } from 'react-intersection-observer'
 
@@ -13,8 +14,9 @@ export default function Proyectos() {
     
 
     const [clicked, setClicked] = useState(null); 
-    const [mascaras, setMascaras] = useState([false, false, false, false]);
+    const [mascaras, setMascaras] = useState([false, false, false, false, false]);
     const { ref: first, inView: visibleFirst} = useInView()
+    const { ref: primero, inView: visiblePrimero} = useInView()
     const { ref: second, inView: visibleSecond} = useInView()
     const { ref: third, inView: visibleThird} = useInView()
 
@@ -41,6 +43,58 @@ export default function Proyectos() {
                     <FormattedMessage id="tos"/>
                 </span>
             </h2>
+            <div ref={primero} className={`${classes.cardsContainerTop} ${visiblePrimero ? classes.animation : ""}` }>
+                <div id={classes.proyectoP}> 
+                    <video id={classes.cardP} controls>
+                        <source src={clinica} type="video/mp4" />
+                    </video>
+                    <button className={classes.boton} onClick={() => handleVisible(1)}>
+                        <FormattedMessage id="saber_mas"/>
+                    </button>
+                {mascaras[1] && (
+                <article className={`${classes.mascaraP} show`}>
+                    <h3 className={classes.tituloProyecto}>Clínica El Ávila</h3>
+                    <h3 className={classes.tituloSecundario}>
+                        <FormattedMessage id="personalp"/>
+                    </h3>
+                    <p className={classes.descripcion}>
+                        <FormattedMessage id="descripcion_proyectoP"/>
+                    </p>
+                    <Link id={classes.proyectoLink} to="https://github.com/MfrMesa/Clinica-El-Avila">
+                        <FormattedMessage id="ver_proyecto"/>
+                    </Link>
+                </article>
+                )}
+                </div> 
+            </div>
+
+            <div ref={third} className={`${classes.cardsContainerBottom} ${visibleThird ? classes.animation : ""}` }>
+                <div id={classes.proyecto4}>
+                    <video id={classes.card4} controls>
+                        <source src={pasteleria} type="video/mp4"/>
+                    </video>
+                    <button className={classes.boton} onClick={() => handleVisible(4)}>
+                        <FormattedMessage id="saber_mas"/>
+                    </button>
+                {mascaras[4] && (
+                <article className={`${classes.mascara4} show `}>
+                        <h3 className={classes.tituloProyecto}>
+                            <FormattedMessage id="peonias"/>
+                        </h3>
+                        <h3 className={classes.tituloSecundario}>
+                            <FormattedMessage id="personalp"/>
+                        </h3>
+                        <p className={classes.descripcion}>
+                            <FormattedMessage id="descripcion_proyecto4"/>
+                        </p>
+                        <Link id={classes.proyectoLink} to="https://github.com/MfrMesa/Peonias-Jazmines-Pasteleria">
+                            <FormattedMessage id="ver_proyecto"/>
+                        </Link>
+                </article>
+                )}
+                </div>
+            </div>
+
             <div ref={first} className={`${classes.cardsContainerTop} ${visibleFirst ? classes.animation : ""}` }>
                 <div id={classes.proyecto1}> 
                     <video id={classes.card1} controls>
@@ -65,15 +119,16 @@ export default function Proyectos() {
                 )}
                 </div> 
             </div>
+
             <div ref={second} className={`${classes.cardsContainerMiddle} ${visibleSecond ? classes.animation : ""}` }>
                 <div id={classes.proyecto2}>
                     <video id={classes.card2} controls>
                         <source src={nintendo} type="video/mp4" />
                     </video>
-                    <button className={classes.botonmiddle} onClick={() => handleVisible(1)}>
+                    <button className={classes.botonmiddle} onClick={() => handleVisible(2)}>
                         <FormattedMessage id="saber_mas"/>
                     </button>
-                {mascaras[1] && (
+                {mascaras[2] && (
                 <article className={`${classes.mascara2} show`}>
                         <h3 className={classes.tituloProyecto}>Nintendo Clone (Landing Page)</h3>
                         <h3 className={classes.tituloSecundario}>
@@ -92,10 +147,10 @@ export default function Proyectos() {
                     <video id={classes.card3} controls>
                         <source src={falcon} type="video/mp4"/>
                     </video>
-                    <button className={classes.botonmiddle} onClick={() => handleVisible(2)}>
+                    <button className={classes.botonmiddle} onClick={() => handleVisible(3)}>
                         <FormattedMessage id="saber_mas"/>
                     </button>
-                {mascaras[2] && (
+                {mascaras[3] && (
                 <article className={`${classes.mascara3} show`}>
                         <h3 className={classes.tituloProyecto}>Falcon Dashboard Clone (Landing Page)</h3>
                         <h3 className={classes.tituloSecundario}>
@@ -105,32 +160,6 @@ export default function Proyectos() {
                             <FormattedMessage id="descripcion_proyecto3"/>
                         </p>
                         <Link id={classes.proyectoLink} to="https://github.com/MfrMesa/Falcon-Dashboard-Clone">
-                            <FormattedMessage id="ver_proyecto"/>
-                        </Link>
-                </article>
-                )}
-                </div>
-            </div>
-            <div ref={third} className={`${classes.cardsContainerBottom} ${visibleThird ? classes.animation : ""}` }>
-                <div id={classes.proyecto4}>
-                    <video id={classes.card4} controls>
-                        <source src={pasteleria} type="video/mp4"/>
-                    </video>
-                    <button className={classes.boton} onClick={() => handleVisible(3)}>
-                        <FormattedMessage id="saber_mas"/>
-                    </button>
-                {mascaras[3] && (
-                <article className={`${classes.mascara4} show `}>
-                        <h3 className={classes.tituloProyecto}>
-                            <FormattedMessage id="peonias"/>
-                        </h3>
-                        <h3 className={classes.tituloSecundario}>
-                            <FormattedMessage id="personalp"/>
-                        </h3>
-                        <p className={classes.descripcion}>
-                            <FormattedMessage id="descripcion_proyecto4"/>
-                        </p>
-                        <Link id={classes.proyectoLink} to="https://github.com/MfrMesa/Peonias-Jazmines-Pasteleria">
                             <FormattedMessage id="ver_proyecto"/>
                         </Link>
                 </article>
