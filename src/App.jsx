@@ -9,31 +9,29 @@ import Contacto from './components/Contacto'
 
 
 export default function App() {
-  const [showBanner, setShowBanner] = useState(true);
-  const [showPortfolio, setShowPortfolio] = useState(false);
+    const [showBanner, setShowBanner] = useState(true);
+    const [showPortfolio, setShowPortfolio] = useState(false);
 
-  useEffect(() => {
-      const timer = setTimeout(() => {
-          setShowBanner(false);
-          setShowPortfolio(true);
-      }, 5000); // Tiempo antes de ocultar el Banner y mostrar el portafolio
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowBanner(false);
+            setShowPortfolio(true);
+        }, 5000); 
+        return () => clearTimeout(timer);
+    }, []);
 
-      // Cleanup timeout on component unmount
-      return () => clearTimeout(timer);
-  }, []);
-
-  return (
-      <div>
-          {showBanner && <Banner />}
-          {showPortfolio && (
-              <>
-                  <Navbar />
-                  <AboutMe />
-                  <Proyectos />
-                  <ExperienciaLaboral />
-                  <Contacto />
-              </>
-          )}
-      </div>
-  );
+    return (
+        <div>
+            {showBanner && <Banner />}
+            {showPortfolio && (
+                <>
+                    <Navbar />
+                    <AboutMe />
+                    <Proyectos />
+                    <ExperienciaLaboral />
+                    <Contacto />
+                </>
+            )}
+        </div>
+    );
 }

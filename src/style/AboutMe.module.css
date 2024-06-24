@@ -184,7 +184,8 @@
     width: 30px;
     height: 30px;
 }
-/* 
+
+
 .animation{
     animation-duration: 2s; 
     animation-name: fadeIn; 
@@ -195,7 +196,6 @@
 
 @keyframes fadeIn {
     from {
-        opacity: 0; 
         transform: translateX(-100%); 
     }
     to {
@@ -215,14 +215,14 @@
 
 @keyframes fadeInRight {
     from {
-        opacity: 0; 
         transform: translateX(100%); 
     }
     to {
         opacity: 1;
         transform: translateX(0); 
     }
-} */
+} 
+
 
 @media (max-width: 768px){
 

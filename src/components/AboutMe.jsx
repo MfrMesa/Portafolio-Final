@@ -13,6 +13,9 @@ import express from "/src/img/express.png"
 import mifoto from "/src/img/yo.jpeg"
 import { FormattedMessage } from 'react-intl';
 import { useInView } from 'react-intersection-observer'
+import ellipseM from "/src/svg/ellipsemorado.svg"
+import ellipseN from "/src/svg/ellipsenaranja.svg"
+import ellipseR from "/src/svg/ellipserosa.svg"
 
 
 
@@ -47,12 +50,12 @@ export default function AboutMe() {
             </div>
             <div ref={right} className={`${classes.imagenes} ${visibleRight ? classes.animationRight : ""}` }>
                 <div className={classes.ellipses}>
-                    <img src="/src/svg/ellipsemorado.svg" className={classes.ellipse1}/>
-                    <img src="/src/svg/ellipsenaranja.svg" className={classes.ellipse2}/>
-                    <img src="/src/svg/ellipserosa.svg" className={classes.ellipse3}/>
-                    <img src="/src/svg/ellipsemorado.svg" className={classes.ellipse4}/>
-                    <img src="/src/svg/ellipsenaranja.svg" className={classes.ellipse5}/>
-                    <img src="/src/svg/ellipserosa.svg" className={classes.ellipse6}/>
+                    <img src={ellipseM} className={classes.ellipse1}/>
+                    <img src={ellipseN} className={classes.ellipse2}/>
+                    <img src={ellipseR} className={classes.ellipse3}/>
+                    <img src={ellipseM} className={classes.ellipse4}/>
+                    <img src={ellipseN} className={classes.ellipse5}/>
+                    <img src={ellipseR} className={classes.ellipse6}/>
                 </div>
                 <img className={classes.yo} src={mifoto} alt="Una foto mia muy profesional"/>
             </div>
