@@ -4,8 +4,9 @@
 
 .galeriaProyectos {
     width: 100%;
-    height: 150rem;
-    background: linear-gradient(180deg, #FFF 20.95%, #e7cfcf 100%);
+    height: 120rem;
+    background: #FEFAFA;
+    padding-top: 4rem;
 }
 
 .titlegaleria {
@@ -21,21 +22,21 @@
     font-family: "Great Mango";
     --color-1: var(--rosa);
     --color-2: var(--morado);
-    --color-3: var(--text);
+    --color-3: var(--amarillo);
     animation: color-animation 4s linear infinite;
 }
 
 .galeriaTitulo2 {
     font-family: "Great Mango";
     --color-1: var(--morado);
-    --color-2: var(--text);
+    --color-2: var(--amarillo);
     --color-3: var(--rosa);
     animation: color-animation 4s linear infinite;
 }
 
 .galeriaTitulo3 {
     font-family: "Great Mango";
-    --color-1: var(--text);
+    --color-1: var(--amarillo);
     --color-2: var(--rosa);
     --color-3: var(--morado);
     animation: color-animation 4s linear infinite;
@@ -58,8 +59,9 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 25rem;
+    height: 30rem;
     gap: 4rem;
+    margin-bottom: 5rem;
 }
 
 #proyecto1,
@@ -73,11 +75,9 @@
 }
 
 
-.mascara1, 
-.mascara4, 
 .mascaraP{        
     position: absolute;
-    background-color: rgba(77, 22, 53, 0.9);
+    background-color: #E5B2D8;
     transition: all 0.5s linear;
     width:  60rem;
     height: 25rem;
@@ -87,34 +87,40 @@
     gap: 1rem;
     top: 0;
     opacity: 0;
+    border-radius: 25px;
+}
+
+#cardP {
+    width: 60rem;
+    height: 25rem;
+    border-radius: 25px;
 }
 
 #card1,      
 #card4,
-#cardP {
-    width: 60rem;
-    height: 25rem;
-}
-
 #card2,
 #card3{
     width: 40rem;
-    height: 25rem;
+    height: 30rem;
+    border-radius: 25px;
 }
 
+.mascara1, 
+.mascara4,
 .mascara2,
 .mascara3{
     position: absolute;
-    background-color: rgba(77, 22, 53, 0.9);
+    background-color: rgba(146, 92, 132, 0.893);
     transition: all 0.5s linear;
     width: 40rem;
-    height: 25rem;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     padding: 2rem;
     gap: 1rem;
     top: 0;
     opacity: 0;
+    border-radius: 25px;
 }
 
 .mascara1:not(.show),
@@ -139,6 +145,7 @@
     font-size: 20px;
     transition: all 0.5s linear;
     opacity: 1;
+    font-weight: 600;
 }
 
 
@@ -161,8 +168,8 @@
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: 700;
-    border-bottom: 2px solid var(--morado);
     width: 9.5%;
+    color: var(--text);
 }
 
 .botonmiddle{
@@ -172,19 +179,18 @@
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: 700;
-    border-bottom: 2px solid var(--morado);
     width: 14%;
+    color: var(--text);
 }
 
 .boton:hover,
 .botonmiddle:hover{
-    color: var(--rosa); 
+    color: var(--morado); 
     transition: all ease 0.2s;
-    border-bottom: 2px solid var(--rosa);;
 }
 
 #proyectoLink:hover{
-    color: var(--rosa);
+    color: var(--amarillo);
 } 
 
 
@@ -198,17 +204,6 @@
     gap: 4rem;
     margin-top: 8rem;
     margin-bottom: 5rem;
-}
-
-
-.cardsContainerBottom {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 25rem;
-    margin-top: 10rem;
 }
 
 

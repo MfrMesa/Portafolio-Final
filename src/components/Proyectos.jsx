@@ -68,12 +68,12 @@ export default function Proyectos() {
                 </div> 
             </div>
 
-            <div ref={third} className={`${classes.cardsContainerBottom} ${visibleThird ? classes.animation : ""}` }>
+            <div ref={third} className={`${classes.cardsContainerMiddle} ${visibleThird ? classes.animation : ""}` }>
                 <div id={classes.proyecto4}>
                     <video id={classes.card4} controls>
                         <source src={pasteleria} type="video/mp4"/>
                     </video>
-                    <button className={classes.boton} onClick={() => handleVisible(4)}>
+                    <button className={classes.botonmiddle} onClick={() => handleVisible(4)}>
                         <FormattedMessage id="saber_mas"/>
                     </button>
                 {mascaras[4] && (
@@ -93,14 +93,11 @@ export default function Proyectos() {
                 </article>
                 )}
                 </div>
-            </div>
-
-            <div ref={first} className={`${classes.cardsContainerTop} ${visibleFirst ? classes.animation : ""}` }>
                 <div id={classes.proyecto1}> 
                     <video id={classes.card1} controls>
                         <source src={villa} type="video/mp4" />
                     </video>
-                    <button className={classes.boton} onClick={() => handleVisible(0)}>
+                    <button className={classes.botonmiddle} onClick={() => handleVisible(0)}>
                         <FormattedMessage id="saber_mas"/>
                     </button>
                 {mascaras[0] && (

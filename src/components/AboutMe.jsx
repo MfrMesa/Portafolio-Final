@@ -24,29 +24,14 @@ export default function AboutMe() {
     return (
         <section id="aboutme" className={classes.aboutInfo}>
             <div ref={side} className={`${classes.aboutMeContainer} ${visibleSide ? classes.animation : ""}` }>
-                <h1 className={classes.aboutMe}>
-                    <span className={classes.aboutMe1}>
-                        <FormattedMessage id="un"/>
-                    </span>
-                    <span className={classes.aboutMe2}>
-                        <FormattedMessage id="poco"/>
-                    </span>
-                    <span className={classes.aboutMe3}>
-                        <FormattedMessage id="de"/>
-                    </span>
-                    <span className={classes.aboutMe4}>
-                        <FormattedMessage id="mi"/>
-                    </span>
-                </h1>
+            <h1 className={classes.nombre}><FormattedMessage id="hola"/> María Fernanda</h1>
+            <h1 className={classes.ahora}>Front-end Developer & UX/UI Designer</h1>
                 <h2 className={classes.shortInfo}>
                     <FormattedMessage id="me_titulo"/>
                 </h2>
                 <p className={classes.info}>
                     <FormattedMessage id="me_info"/>
                 </p>
-            </div>
-            <div ref={right} className={`${classes.imagenes} ${visibleRight ? classes.animationRight : ""}` }>
-                <img className={classes.yo} src={mifoto} alt="Una foto mia muy profesional"/>
                 <div className={classes.tecnologias}>
                     <img src={css} alt="logo tecnologia aprendida" className={classes.logos}/>
                     <img src={html} alt="logo tecnologia aprendida" className={classes.logos}/>
@@ -59,6 +44,17 @@ export default function AboutMe() {
                     <img src={node} alt="logo tecnologia aprendida" className={classes.logos}/>
                     <img src={express} alt="logo tecnologia aprendida" className={classes.logos}/>
                 </div>
+            </div>
+            <div ref={right} className={`${classes.imagenes} ${visibleRight ? classes.animationRight : ""}` }>
+                <div className={classes.ellipses}>
+                    <img src="/src/svg/ellipsemorado.svg" className={classes.ellipse1}/>
+                    <img src="/src/svg/ellipsenaranja.svg" className={classes.ellipse2}/>
+                    <img src="/src/svg/ellipserosa.svg" className={classes.ellipse3}/>
+                    <img src="/src/svg/ellipsemorado.svg" className={classes.ellipse4}/>
+                    <img src="/src/svg/ellipsenaranja.svg" className={classes.ellipse5}/>
+                    <img src="/src/svg/ellipserosa.svg" className={classes.ellipse6}/>
+                </div>
+                <img className={classes.yo} src={mifoto} alt="Una foto mia muy profesional"/>
             </div>
     </section>
     )

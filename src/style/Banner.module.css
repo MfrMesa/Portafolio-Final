@@ -9,7 +9,7 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background: linear-gradient(180deg, #FFFFFF 30%, #e7cfcf 100%);
+    background: #FEFAFA;
 }
 
 
@@ -22,8 +22,8 @@
     grid-template-columns: repeat(10, 90px);
     grid-template-rows: repeat(4, 90px);
     width: 100%;
-    height: 35rem;
-    margin-top: 4rem;
+    height: 43.4rem;
+    padding-top: 8rem;
 }
 
 
@@ -34,11 +34,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn1; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto2 {
@@ -48,11 +45,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn4; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto3 {
@@ -62,11 +56,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn3; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto4 {
@@ -76,11 +67,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn2; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite; 
 }
 
 .foto5 {
@@ -90,11 +78,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn1; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 
@@ -105,11 +90,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn3; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto8 {
@@ -119,11 +101,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn4; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto9 {
@@ -133,11 +112,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn1; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto10 {
@@ -147,11 +123,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn2; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite; 
 }
 
 .foto11 {
@@ -161,11 +134,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn4; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto12 {
@@ -175,11 +145,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn1; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto13 {
@@ -189,11 +156,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn3; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto14 {
@@ -203,11 +167,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn4; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto15 {
@@ -217,11 +178,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn1; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto16 {
@@ -231,11 +189,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn2; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto17 {
@@ -245,11 +200,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn3; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto18 {
@@ -259,11 +211,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn1; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto19 {
@@ -273,11 +222,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn4; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto20 {
@@ -287,11 +233,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn2; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px #dad6d6;
+    animation: pulse 3s infinite; 
 }
 
 .foto21 {
@@ -301,11 +244,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn4; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite; 
 }
 
 
@@ -316,11 +256,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn1; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 
@@ -331,11 +268,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn3; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto25 {
@@ -345,11 +279,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn4; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto26 {
@@ -359,11 +290,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn1; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite; 
 }
 
 .foto27 {
@@ -373,11 +301,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn2; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite; 
 }
 
 .foto28 {
@@ -387,11 +312,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn3; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto29 {
@@ -401,11 +323,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn4; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto30 {
@@ -415,11 +334,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn1; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite; 
 }
 
 .foto31 {
@@ -429,11 +345,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn2; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite; 
 }
 
 .foto32 {
@@ -443,11 +356,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;    
-    animation-duration: 1s; 
-    animation-name: fadeIn3; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px  #dad6d6;    
+    animation: pulse 3s infinite;
 }
 
 .foto33 {
@@ -457,11 +367,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn4; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto34 {
@@ -471,11 +378,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn3; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto35 {
@@ -485,11 +389,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn2; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite; 
 }
 
 .foto36 {
@@ -499,11 +400,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn4; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto37 {
@@ -513,11 +411,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn4; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
+    box-shadow: 0px 8px 8px #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 .foto38 {
@@ -527,11 +422,8 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn2; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
+    box-shadow: 0px 8px 8px #dad6d6;
+    animation: pulse 3s infinite; 
 }
 
 .foto39 {
@@ -541,105 +433,29 @@
     height: 100%;
     border: 5px solid var(--white);
     border-bottom: 15px var(--white) solid;
-    box-shadow: 0px 8px 8px  #8c8989;
-    animation-duration: 1s; 
-    animation-name: fadeIn1; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out; 
-}
-
-
-.nombre{
-    font-size: 84px;
-    font-weight: 500;
-    color: var(--plum);
-    position: absolute;
-    font-family: "Great Mango";
-    animation-duration: 3s; 
-    animation-name: fadeIn5; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
-    z-index: 3;
-    margin-top: -3rem;
-}
-
-
-.ahora {
-    font-size: 40px;
-    font-weight: 500;
-    color: var(--plum);
-    position: absolute;
-    font-family: "Great Mango";
-    animation-duration: 3s; 
-    animation-name: fadeIn5; 
-    animation-range-start: cover;
-    animation-timing-function: ease-in-out;
-    z-index: 3;
-    margin-top: 13rem;
+    box-shadow: 0px 8px 8px  #dad6d6;
+    animation: pulse 3s infinite;
 }
 
 
 
-@keyframes fadeIn1 {
-    from {
-        opacity: 0; 
-        transform: translateX(-100%); 
+@keyframes pulse {
+    0% {
+        opacity: 0;
+        transform: scale(1);
     }
-    to {
+    40% {
         opacity: 1;
-        transform: translateX(0); 
+        transform: scale(1.05);
     }
-}
-
-
-@keyframes fadeIn2 {
-    from {
-        opacity: 0; 
-        transform: translateX(-50%); 
-    }
-    to {
+    60% {
         opacity: 1;
-        transform: translateX(0); 
+        transform: scale(1.05);
     }
-    
-}
-
-
-@keyframes fadeIn3 {
-    from {
-        opacity: 0; 
-        transform: translateX(100%); 
+    100% {
+        opacity: 0;
+        transform: scale(1);
     }
-    to {
-        opacity: 1;
-        transform: translateX(0); 
-    }
-}
-
-
-@keyframes fadeIn4 {
-    from {
-        opacity: 0; 
-        transform: translateX(50%); 
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0); 
-    }
-}
-
-
-@keyframes fadeIn5 {
-    from {
-        opacity: 0; 
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.hidden{
-    display: none;
 }
 
 

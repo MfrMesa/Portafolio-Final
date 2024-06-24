@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import AboutMe from './components/AboutMe'
@@ -7,20 +7,33 @@ import ExperienciaLaboral from './components/ExperienciaLaboral'
 import Contacto from './components/Contacto'
 
 
+
 export default function App() {
+  const [showBanner, setShowBanner] = useState(true);
+  const [showPortfolio, setShowPortfolio] = useState(false);
 
+  useEffect(() => {
+      const timer = setTimeout(() => {
+          setShowBanner(false);
+          setShowPortfolio(true);
+      }, 5000); // Tiempo antes de ocultar el Banner y mostrar el portafolio
 
+      // Cleanup timeout on component unmount
+      return () => clearTimeout(timer);
+  }, []);
 
-    return (
+  return (
       <div>
-        <Navbar/>
-        <Banner/>
-        <AboutMe/>
-        <Proyectos/>
-        <ExperienciaLaboral/> 
-        <Contacto/>
+          {showBanner && <Banner />}
+          {showPortfolio && (
+              <>
+                  <Navbar />
+                  <AboutMe />
+                  <Proyectos />
+                  <ExperienciaLaboral />
+                  <Contacto />
+              </>
+          )}
       </div>
-    )
+  );
 }
-
-

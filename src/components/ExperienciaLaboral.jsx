@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import pin from "/src/svg/pin.svg"
 import { FormattedMessage } from 'react-intl';
 import {Context} from "/src/components/Wrapper"
-import cvEspañol from "/src/María Fernanda Gómez Mesa  Full Stack Developer & UXUI Designer (es).pdf"
+import CV from "/src/María Fernanda Gómez Mesa  Front-end Developer & UXUI Designer (en).pdf"
 
 
 export default function Experiencia() {
@@ -57,13 +57,13 @@ export default function Experiencia() {
                         <path d="M0.288785 5.49536L6.17005 0.587411L14.5323 8.15069L23.1892 0.926365L28.8704 6.06459L20.2104 13.2915L19.5325 13.8627L14.3387 18.197L14.3357 18.1996L13.6687 17.6019L8.65154 13.0642L8.65481 13.0615L0.288785 5.49536ZM6.12351 2.92446L2.97857 5.54893L11.3379 13.1095L11.3347 13.1123L14.3787 15.8653L17.5305 13.2351L18.2078 12.6644L26.1806 6.01102L23.1427 3.26341L14.4858 10.4877L6.12351 2.92446Z" fill="currentColor"/>
                     </svg>
                 </div>
-                <span className={classes.fechaTrabajo}>2023</span>
+                <span className={classes.fechaTrabajo}>2024</span>
             </div>
             {visible[0] && (
             <div className={classes.infoContainer}>
                 <div className={classes.locacionConatiner}>
                     <img src={pin} id={classes.pin}/>
-                    <Link className={classes.locacion} to="https://github.com/MfrMesa">DEVELHOPE / MADRID</Link>
+                    <Link className={classes.locacion} to="https://github.com/MfrMesa">Freelance</Link>
                 </div>
                 <p className={classes.descripcionTrabajo}>
                     <FormattedMessage id="descripcion_trabajo"/>
@@ -98,7 +98,7 @@ export default function Experiencia() {
             <div className={classes.infoContainer}>
                 <div className={classes.locacionConatiner}>
                     <img src={pin} id={classes.pin}/>
-                    <Link className={classes.locacion} to="https://sweetdeliverymadrid.es/">SWEET DELIVERY / MADRID</Link>
+                    <Link className={classes.locacion} to="https://sweetdeliverymadrid.es/">Develhope / MADRID</Link>
                 </div>
                 <p className={classes.descripcionTrabajo}>
                     <FormattedMessage id="descripcion_trabajo1"/>
@@ -127,13 +127,13 @@ export default function Experiencia() {
                         <path d="M0.288785 5.49536L6.17005 0.587411L14.5323 8.15069L23.1892 0.926365L28.8704 6.06459L20.2104 13.2915L19.5325 13.8627L14.3387 18.197L14.3357 18.1996L13.6687 17.6019L8.65154 13.0642L8.65481 13.0615L0.288785 5.49536ZM6.12351 2.92446L2.97857 5.54893L11.3379 13.1095L11.3347 13.1123L14.3787 15.8653L17.5305 13.2351L18.2078 12.6644L26.1806 6.01102L23.1427 3.26341L14.4858 10.4877L6.12351 2.92446Z" fill="currentColor"/>
                     </svg>
                 </div>
-                <span className={classes.fechaTrabajo}>2022</span>
+                <span className={classes.fechaTrabajo}>2014-2023</span>
             </div>
             {visible[2] && (
             <div className={classes.infoContainer}>
                 <div className={classes.locacionConatiner}>
                     <img src={pin} id={classes.pin}/>
-                    <Link className={classes.locacion} to="https://www.instagram.com/amaris1968/">AMARIS / MADRID</Link>
+                    <Link className={classes.locacion} to="https://www.instagram.com/amaris1968/"> Varias Empresas / MADRID / BUENOS AIRES / CARACAS</Link>
                 </div>
                 <p className={classes.descripcionTrabajo}>
                     <FormattedMessage id="descripcion_trabajo2"/>                
@@ -152,43 +152,8 @@ export default function Experiencia() {
             </div>
             )}
         </article>
-        <article className={classes.resumenCV}>
-            <div className={`${classes.contenedorTituloTrabajo} ${clicked === 2 ? classes.clicked : ''}`} onClick={() => handleClick(3)}>
-                <div className={classes.tituloContenedor}>
-                    <h3 className={classes.tituloTrabajo}>
-                        <FormattedMessage id="titulo_trabajo3"/>
-                    </h3>
-                    <svg className={classes.svg} width="29" height="19" viewBox="0 0 29 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.288785 5.49536L6.17005 0.587411L14.5323 8.15069L23.1892 0.926365L28.8704 6.06459L20.2104 13.2915L19.5325 13.8627L14.3387 18.197L14.3357 18.1996L13.6687 17.6019L8.65154 13.0642L8.65481 13.0615L0.288785 5.49536ZM6.12351 2.92446L2.97857 5.54893L11.3379 13.1095L11.3347 13.1123L14.3787 15.8653L17.5305 13.2351L18.2078 12.6644L26.1806 6.01102L23.1427 3.26341L14.4858 10.4877L6.12351 2.92446Z" fill="currentColor"/>
-                    </svg>
-                </div>
-                <span className={classes.fechaTrabajo}>2019</span>
-            </div>
-            {visible[3] && (
-            <div className={classes.infoContainer}>
-                <div className={classes.locacionConatiner}>
-                    <img src={pin} id={classes.pin}/>
-                    <Link className={classes.locacion} to="https://www.copetincatering.com.ar/index.html">COPETÍN CATERING / BUENOS AIRES</Link>
-                </div>
-                <p className={classes.descripcionTrabajo}>
-                    <FormattedMessage id="descripcion_trabajo3"/>                
-                </p>
-                <div className={classes.habilidadesContainer}>
-                    <span className={classes.habilidades}>
-                        <FormattedMessage id="creatividad"/> 
-                    </span>
-                    <span className={classes.habilidades}>
-                        <FormattedMessage id="resolucion"/> 
-                    </span>
-                    <span className={classes.habilidades}>
-                        <FormattedMessage id="inventario"/> 
-                    </span>
-                </div>
-            </div>
-            )}
-        </article>
         <div className={classes.verCv}>
-            <Link id={classes.cvCompleto} to={cvEspañol}  target="_blank">
+            <Link id={classes.cvCompleto} to={CV}  target="_blank">
                 <FormattedMessage id="cv"/>
             </Link>
         </div>
