@@ -61,7 +61,7 @@ export default function Experiencia() {
             </div>
             {visible[0] && (
             <div className={classes.infoContainer}>
-                <div className={classes.locacionConatiner}>
+                <div className={classes.locacionContainer}>
                     <img src={pin} id={classes.pin}/>
                     <Link className={classes.locacion} to="https://github.com/MfrMesa">Freelance</Link>
                 </div>
@@ -96,7 +96,7 @@ export default function Experiencia() {
             </div>
             {visible[1] && (
             <div className={classes.infoContainer}>
-                <div className={classes.locacionConatiner}>
+                <div className={classes.locacionContainer}>
                     <img src={pin} id={classes.pin}/>
                     <Link className={classes.locacion} to="https://sweetdeliverymadrid.es/">Develhope / MADRID</Link>
                 </div>
@@ -131,7 +131,7 @@ export default function Experiencia() {
             </div>
             {visible[2] && (
             <div className={classes.infoContainer}>
-                <div className={classes.locacionConatiner}>
+                <div className={classes.locacionContainer}>
                     <img src={pin} id={classes.pin}/>
                     <Link className={classes.locacion} to="https://www.instagram.com/amaris1968/"> Varias Empresas / MADRID / BUENOS AIRES / CARACAS</Link>
                 </div>

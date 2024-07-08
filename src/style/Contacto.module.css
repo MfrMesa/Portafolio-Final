@@ -7,6 +7,7 @@
     width: 100%;
     height: 30rem;
     padding: 2rem;
+    background-color: #FEFAFA;
 }
 
 .contactoContainer{
@@ -122,6 +123,8 @@ textarea:focus{
     .contactoInfo{
         padding-top: 0;
         height: 40rem;
+        flex-direction: column;
+        align-items: center;
     }
 
     .contactoTitulo{
@@ -131,6 +134,7 @@ textarea:focus{
     .linksContactoContainer{
         width: fit-content;
     }
+
 }
 
 
@@ -148,10 +152,6 @@ textarea:focus{
 
     .textoContacto{
         font-size: 1.5rem;
-    }
-
-    .linksContactoContainer{
-        flex-direction: column;
     }
 
     .mensaje{

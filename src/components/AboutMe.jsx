@@ -50,26 +50,26 @@ export default function AboutMe() {
     return (
         <section id="aboutme" className={classes.aboutInfo}>
             <div ref={side} className={`${classes.aboutMeContainer} ${visibleSide ? classes.animation : ""}` }>
-            <h1 className={classes.nombre}><FormattedMessage id="hola"/> María Fernanda</h1>
-            <h1 className={classes.ahora}>Front-end Developer & UX/UI Designer</h1>
-                <h2 className={classes.shortInfo}>
-                    <FormattedMessage id="me_titulo"/>
-                </h2>
-                <p className={classes.info}>
-                    <FormattedMessage id="me_info"/>
-                </p>
-                <div className={classes.tecnologias}>
-                    <img src={css} alt="logo tecnologia aprendida" className={classes.logos}/>
-                    <img src={html} alt="logo tecnologia aprendida" className={classes.logos}/>
-                    <img src={react} alt="logo tecnologia aprendida" className={classes.logos}/>
-                    <img src={figma} alt="logo tecnologia aprendida" className={classes.logos}/>
-                    <img src={vite} alt="logo tecnologia aprendida" className={classes.logos}/>
-                    <img src={sql} alt="logo tecnologia aprendida" className={classes.logos}/>
-                    <img src={js} alt="logo tecnologia aprendida" className={classes.logos}/>
-                    <img src={ts} alt="logo tecnologia aprendida"  className={classes.logos}/>
-                    <img src={node} alt="logo tecnologia aprendida" className={classes.logos}/>
-                    <img src={express} alt="logo tecnologia aprendida" className={classes.logos}/>
-                </div>
+                <h1 className={classes.nombre}><FormattedMessage id="hola"/> María Fernanda</h1>
+                <h1 className={classes.ahora}>Front-end Developer & UX/UI Designer</h1>
+                    <h2 className={classes.shortInfo}>
+                        <FormattedMessage id="me_titulo"/>
+                    </h2>
+                    <p className={classes.info}>
+                        <FormattedMessage id="me_info"/>
+                    </p>
+                    <div className={classes.tecnologias}>
+                        <img src={css} alt="logo tecnologia aprendida" className={classes.logos}/>
+                        <img src={html} alt="logo tecnologia aprendida" className={classes.logos}/>
+                        <img src={react} alt="logo tecnologia aprendida" className={classes.logos}/>
+                        <img src={figma} alt="logo tecnologia aprendida" className={classes.logos}/>
+                        <img src={vite} alt="logo tecnologia aprendida" className={classes.logos}/>
+                        <img src={sql} alt="logo tecnologia aprendida" className={classes.logos}/>
+                        <img src={js} alt="logo tecnologia aprendida" className={classes.logos}/>
+                        <img src={ts} alt="logo tecnologia aprendida"  className={classes.logos}/>
+                        <img src={node} alt="logo tecnologia aprendida" className={classes.logos}/>
+                        <img src={express} alt="logo tecnologia aprendida" className={classes.logos}/>
+                    </div>
             </div>
             <div className={classes.imagenes}>
                 <img className={`${classes.yo} ${photo ? classes.viewPhoto : ""}` } src={mifoto} alt="Una foto mia muy profesional"/>

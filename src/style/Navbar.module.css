@@ -9,7 +9,6 @@
     color: var(--plum);
     box-sizing: border-box;
     line-height: 1.5;
-    background: #FEFAFA;
 }
 
 
@@ -23,6 +22,7 @@
     height: 70px;
     top: 0;
     z-index: 100;
+    background-color: #FEFAFA;
 }
 
 
@@ -84,7 +84,7 @@
     }
 
     .itemsCV{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     
@@ -96,6 +96,7 @@
     .divider {
         height: 20px;
     }
+
 
 }
 
