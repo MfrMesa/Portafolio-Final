@@ -16,7 +16,6 @@ export default function Proyectos() {
     const [clicked, setClicked] = useState(null); 
     const [mascaras, setMascaras] = useState([false, false, false, false, false]);
     const { ref: first, inView: visibleFirst} = useInView()
-    const { ref: primero, inView: visiblePrimero} = useInView()
     const { ref: second, inView: visibleSecond} = useInView()
     const { ref: third, inView: visibleThird} = useInView()
 
@@ -43,7 +42,7 @@ export default function Proyectos() {
                     <FormattedMessage id="tos"/>
                 </span>
             </h2>
-            <div ref={primero} className={`${classes.cardsContainerTop} ${visiblePrimero ? classes.animation : ""}` }>
+            <div ref={first} className={`${classes.cardsContainerTop} ${visibleFirst ? classes.animation : ""}` }>
                 <div id={classes.proyectoP}> 
                     <video id={classes.cardP} controls>
                         <source src={clinica} type="video/mp4" />
