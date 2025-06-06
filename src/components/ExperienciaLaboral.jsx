@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import pin from "/src/svg/pin.svg"
 import { FormattedMessage } from 'react-intl';
 import {Context} from "/src/components/Wrapper"
-import CV from "/src/María Fernanda Gómez Mesa  Front-end Developer & UXUI Designer (en).pdf"
+import CV from "/src/María Fernanda Gómez Mesa  Front-End Developer & UXUI Designer (es).pdf"
 
 
 export default function Experiencia() {
@@ -61,9 +61,9 @@ export default function Experiencia() {
             </div>
             {visible[0] && (
             <div className={classes.infoContainer}>
-                <div className={classes.locacionConatiner}>
+                <div className={classes.locacionContainer}>
                     <img src={pin} id={classes.pin}/>
-                    <Link className={classes.locacion} to="https://github.com/MfrMesa">Freelance</Link>
+                    <Link className={classes.locacion} to="https://github.com/MfrMesa">Developer(internship)</Link>
                 </div>
                 <p className={classes.descripcionTrabajo}>
                     <FormattedMessage id="descripcion_trabajo"/>
@@ -96,7 +96,7 @@ export default function Experiencia() {
             </div>
             {visible[1] && (
             <div className={classes.infoContainer}>
-                <div className={classes.locacionConatiner}>
+                <div className={classes.locacionContainer}>
                     <img src={pin} id={classes.pin}/>
                     <Link className={classes.locacion} to="https://sweetdeliverymadrid.es/">Develhope / MADRID</Link>
                 </div>
@@ -131,7 +131,7 @@ export default function Experiencia() {
             </div>
             {visible[2] && (
             <div className={classes.infoContainer}>
-                <div className={classes.locacionConatiner}>
+                <div className={classes.locacionContainer}>
                     <img src={pin} id={classes.pin}/>
                     <Link className={classes.locacion} to="https://www.instagram.com/amaris1968/"> Varias Empresas / MADRID / BUENOS AIRES / CARACAS</Link>
                 </div>
